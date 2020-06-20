@@ -2,11 +2,16 @@
 
 Oracle JET Data visualization based on Zeppelin syntax.
 
+https://www.oracle.com/webfolder/technetwork/jet/index.html
+https://classic.yarnpkg.com/en/
+https://jestjs.io/
+
 ## Installation
 
+macOS
 
 ```bash
-yarn install
+npm install -g yarn && yarn install
 ```
 
 ## Usage
@@ -14,6 +19,11 @@ yarn install
 ```bash
 yarn build
 yarn serve
+```
+
+# Test
+```bash
+yarn test
 ```
 
 ## Contributing

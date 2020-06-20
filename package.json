@@ -22,7 +22,7 @@
   "scripts": {
     "test": "jest --watchAll --coverage",
     "build": "ojet build && jest --coverage",
-    "serve": "ojet serve"
+    "serve": "ojet serve && jest --coverage"
   },
   "private": true
 }
