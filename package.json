@@ -20,8 +20,9 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "jest --watchAll",
-    "build": "jest && ojet build"
+    "test": "jest --watchAll --coverage",
+    "build": "ojet build && jest --coverage",
+    "serve": "ojet serve"
   },
   "private": true
 }

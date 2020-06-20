@@ -53,7 +53,7 @@ module.exports = function () {
 
     watch: {
       tests: {
-        files: ['src/ts/tests/*.ts'],
+        files: ['src/ts/tests/**/*.ts'],
         commands: ['yarn test'],
         options: {
           liverealod: true,
