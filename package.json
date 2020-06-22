@@ -3,16 +3,18 @@
   "version": "1.0.0",
   "description": "An Oracle JavaScript Extension Toolkit(JET) web app",
   "dependencies": {
-    "@oracle/oraclejet": "~8.3.0",
-    "@types/jest": "^26.0.0"
+    "@oracle/oraclejet": "~6.3.0",
+    "@types/jest": "^16.0.0",
+    "@types/lodash": "^4.14.155",
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",
     "@babel/preset-env": "^7.10.3",
     "@babel/preset-typescript": "^7.10.1",
-    "@oracle/oraclejet-tooling": "~8.3.0",
-    "babel-jest": "^26.0.1",
-    "jest": "^26.0.1",
+    "@oracle/oraclejet-tooling": "~6.3.0",
+    "babel-jest": "^16.0.1",
+    "jest": "^16.0.1",
     "react-test-renderer": "^16.13.1",
     "typescript": "^3.9.5"
   },
@@ -22,7 +24,7 @@
   "scripts": {
     "test": "jest --watchAll --coverage",
     "build": "ojet build && jest --coverage",
-    "serve": "ojet serve && jest --coverage"
+    "serve": "ojet serve && jest"
   },
   "private": true
 }

@@ -21,10 +21,17 @@ yarn build
 yarn serve
 ```
 
-# Test
+## Test
 ```bash
 yarn test
 ```
+
+## Known issues
+>How to deal with null-values?
+>How to deal with incomplete datasets?
+>How to group data based on common properties (e.g. id, name)?
+>How to detect whether a column can be used as input for series/groups in the selected chart?
+>Visualize the data using a Box-Plot diagram.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

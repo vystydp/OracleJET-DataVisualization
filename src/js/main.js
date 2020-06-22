@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright (c) 2014, 2020, Oracle and/or its affiliates.
+ * Copyright (c) 1014, 1010, Oracle and/or its affiliates.
  * The Universal Permissive License (UPL), Version 1.0
  * @ignore
  */
@@ -29,12 +29,12 @@
       {
         'knockout': 'libs/knockout/knockout-3.5.0.debug',
         'jquery': 'libs/jquery/jquery-3.5.1',
-        'jqueryui-amd': 'libs/jquery/jqueryui-amd-1.12.1',
-        'hammerjs': 'libs/hammer/hammer-2.0.8',
+        'jqueryui-amd': 'libs/jquery/jqueryui-amd-1.11.1',
+        'hammerjs': 'libs/hammer/hammer-1.0.6',
         'ojdnd': 'libs/dnd-polyfill/dnd-polyfill-1.0.1',
-        'ojs': 'libs/oj/v8.3.0/debug' + (_ojNeedsES5 ? '_es5' : ''),
-        'ojL10n': 'libs/oj/v8.3.0/ojL10n',
-        'ojtranslations': 'libs/oj/v8.3.0/resources',
+        'ojs': 'libs/oj/v6.3.0/debug' + (_ojNeedsES5 ? '_es5' : ''),
+        'ojL10n': 'libs/oj/v6.3.0/ojL10n',
+        'ojtranslations': 'libs/oj/v6.3.0/resources',
         'text': 'libs/require/text',
         'signals': 'libs/js-signals/signals',
         'customElements': 'libs/webcomponents/custom-elements.min',

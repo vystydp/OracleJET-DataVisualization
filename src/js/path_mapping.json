@@ -4,10 +4,10 @@
 
   "cdns": {
     "jet": {
-      "prefix": "https://static.oracle.com/cdn/jet/v8.3.0/default/js",
+      "prefix": "https://static.oracle.com/cdn/jet/v6.3.0/default/js",
       "config": "bundles-config.js"
     },
-    "3rdparty": "https://static.oracle.com/cdn/jet/v8.3.0/3rdparty"
+    "3rdparty": "https://static.oracle.com/cdn/jet/v6.3.0/3rdparty"
   },
 
   "libs": {
@@ -48,12 +48,12 @@
       "debug": {
         "src": ["*.js", "widgets/draggable.js", "widgets/mouse.js", "widgets/sortable.js"],
         "path": "libs/jquery/jqueryui-amd-#{version}",
-        "cdnPath": "jquery/jqueryui-amd-1.12.1"
+        "cdnPath": "jquery/jqueryui-amd-1.11.1"
       },
       "release": {
         "src": ["*.js", "widgets/draggable.js", "widgets/mouse.js", "widgets/sortable.js"],
         "path": "libs/jquery/jqueryui-amd-#{version}.min",
-        "cdnPath": "jquery/jqueryui-amd-1.12.1.min"
+        "cdnPath": "jquery/jqueryui-amd-1.11.1.min"
       }
     },
 
@@ -78,12 +78,12 @@
       "debug": {
         "src": "hammer.js",
         "path": "libs/hammer/hammer-#{version}.js",
-        "cdnPath": "hammer/hammer-2.0.8"
+        "cdnPath": "hammer/hammer-1.0.6"
       },
       "release": {
         "src": "hammer.min.js",
         "path": "libs/hammer/hammer-#{version}.min.js",
-        "cdnPath": "hammer/hammer-2.0.8.min"
+        "cdnPath": "hammer/hammer-1.0.6.min"
       }
     },
 

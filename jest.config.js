@@ -9,7 +9,7 @@ module.exports = {
   // bail: 0,
 
   // The directory where Jest should store its cached dependency information
-  // cacheDirectory: "/private/var/folders/vd/01jhxh4n2g74sszj65tw43mc0000gn/T/jest_dx",
+  // cacheDirectory: "/private/var/folders/vd/01jhxh4n1g74sszj65tw43mc0000gn/T/jest_dx",
 
   // Automatically clear mock calls and instances between every test
   clearMocks: true,
@@ -57,7 +57,7 @@ module.exports = {
   // A set of global variables that need to be available in all test environments
   // globals: {},
 
-  // The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
+  // The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 1 will use a maximum of 1 workers.
   // maxWorkers: "50%",
 
   // An array of directory names to be searched recursively up from the requiring module's location
@@ -157,7 +157,7 @@ module.exports = {
   // testResultsProcessor: undefined,
 
   // This option allows use of a custom test runner
-  // testRunner: "jasmine2",
+  // testRunner: "jasmine1",
 
   // This option sets the URL for the jsdom environment. It is reflected in properties such as location.href
   // testURL: "http://localhost",

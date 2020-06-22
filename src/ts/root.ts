@@ -1,9 +1,14 @@
 import * as ko from "knockout";
-import rootViewModel from "./controllers/appController";
+import "ojs/ojbootstrap";
+import rootViewModel from "./viewModels/RootViewModel";
+import scatterViewModel from "./viewModels/ScatterViewModel";
 import "ojs/ojknockout";
 import "ojs/ojbutton";
 import "ojs/ojtoolbar";
 import "ojs/ojmenu";
+import "ojs/ojchart";
+import "ojs/ojinputtext";
+
 
 export default class Root {
   constructor() {
@@ -18,6 +23,6 @@ export default class Root {
   
   init(): void {
     // bind your ViewModel for the content of the whole page body.
-    ko.applyBindings(rootViewModel, document.getElementById("globalBody"));
+    ko.applyBindings({scatter: scatterViewModel, root: rootViewModel}, document.getElementById("globalBody"));
   }
 }

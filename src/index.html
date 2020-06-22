@@ -24,70 +24,81 @@
   section to represent the appropriate content type.
   ***************************** IMPORTANT INFORMATION ************************************ -->
 <html lang="en-us">
-  <head>
-    <title>Oracle JET Starter Template - Web Basic</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1">
-    <link rel="icon" href="css/images/favicon.ico" type="image/x-icon" />
+<head>
+  <title>Oracle JET Starter Template - Web Basic</title>
 
-    <!-- This is the main css file for the default Alta theme -->
-    <!-- injector:theme -->
-    <link rel="stylesheet" href="css/libs/oj/v8.3.0/alta/oj-alta-min.css" type="text/css"/>
-    <!-- endinjector -->
-    <!-- This contains icon fonts used by the starter template -->
-    <link rel="stylesheet" href="css/demo-alta-site-min.css" type="text/css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1">
+  <link rel="icon" href="css/images/favicon.ico" type="image/x-icon" />
 
-    <!-- This is where you would add any app specific styling -->
-    <link rel="stylesheet" href="css/app.css" type="text/css"/>
+  <!-- This is the main css file for the default Alta theme -->
+  <!-- injector:theme -->
+  <link rel="stylesheet" href="css/libs/oj/v8.3.0/alta/oj-alta-min.css" type="text/css" />
+  <!-- endinjector -->
+  <!-- This contains icon fonts used by the starter template -->
+  <link rel="stylesheet" href="css/demo-alta-site-min.css" type="text/css" />
 
-  </head>
-  <body class="oj-web-applayout-body">
-    <div id="globalBody" class="oj-web-applayout-page">
-      <!--
+  <!-- This is where you would add any app specific styling -->
+  <link rel="stylesheet" href="css/app.css" type="text/css" />
+
+</head>
+
+<body class="oj-web-applayout-body">
+  <div id="globalBody" class="oj-web-applayout-page">
+    <!--
          ** Oracle JET V8.3.0 web application header pattern.
          ** Please see the demos under Cookbook/Patterns/App Shell: Web
          ** and the CSS documentation under Support/API Docs/Non-Component Styling
          ** on the JET website for more information on how to use this pattern.
       -->
-      <header role="banner" class="oj-web-applayout-header">
-        <div class="oj-web-applayout-max-width oj-flex-bar oj-sm-align-items-center">
-          <div class="oj-flex-bar-middle oj-sm-align-items-baseline">
-            <span role="img" class="oj-icon demo-oracle-icon" title="Oracle Logo" alt="Oracle Logo"></span>
-            <h1 class="oj-sm-only-hide oj-web-applayout-header-title" title="Application Name"><oj-bind-text value="[[appName]]"></oj-bind-text></h1>
-          </div>
-          <div class="oj-flex-bar-end">
-            <!-- Responsive Toolbar -->
-          </div>
+    <header role="banner" class="oj-web-applayout-header">
+      <div class="oj-web-applayout-max-width oj-flex-bar oj-sm-align-items-center">
+        <div class="oj-flex-bar-middle oj-sm-align-items-baseline">
+          <h1 class="oj-sm-only-hide oj-web-applayout-header-title" title="Application Name">
+            <oj-bind-text value="[[root.appName]]"></oj-bind-text>
+          </h1>
         </div>
-      </header>
-      <div role="main" class="oj-web-applayout-max-width oj-web-applayout-content">
-
-        <h3><oj-bind-text value="[[title]]"></oj-bind-text></h3>
-        
-
-
-
+        <div class="oj-flex-bar-end">
+          <!-- Responsive Toolbar -->
+        </div>
       </div>
-      <footer class="oj-web-applayout-footer" role="contentinfo">
-        <div class="oj-web-applayout-footer-item oj-web-applayout-max-width">
-          <ul>
-            <oj-bind-for-each data="[[footerLinks]]">
-              <template>
-                <li><a :id="[[$current.data.linkId]]" :href="[[$current.data.linkTarget]]"><oj-bind-text value="[[$current.data.name]]"></oj-bind-text></a></li>
-              </template>
-            </oj-bind-for-each>
-          </ul>
-        </div>
-        <div class="oj-web-applayout-footer-item oj-web-applayout-max-width oj-text-secondary-color oj-text-sm">
-          Copyright © 2014, 2020 Oracle and/or its affiliates All rights reserved.
-        </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="js/libs/require/require.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    </header>
+    <div role="main" class="oj-web-applayout-max-width oj-web-applayout-content">
+      
+      <div id="scatter-input"  class="oj-sm-6 oj-md-6 oj-lg-6 oj-flex-item">
+        <oj-label style="float: left; margin: 5px 10px">Input: </oj-label>
+        <oj-input-text id="scatter-input-text" value={{scatter.input}} autofocus>
+        </oj-input-text>
+        <oj-button data-bind="click: scatter.scatterInputChanged">Submit</oj-button>
+      </div>
+      
+      <div id='chart-container'>
+        <oj-chart 
+            type="scatter" 
+            selection-mode="multiple"
+            series="[[scatter.scatterSeries]]"
+            groups="[[scatter.scatterGroups]]"
+            animation-on-display="auto"
+            hover-behavior="dim"
+            hide-and-show-behavior="withRescale"
+            style="width:100%;height:350px;">
+        </oj-chart>
 
-  </body>
+        <div style="clear:both;"></div>
+      </div>
+    </div>
+
+    <footer class="oj-web-applayout-footer" role="contentinfo">
+      <div class="oj-web-applayout-footer-item oj-web-applayout-max-width oj-text-secondary-color oj-text-sm">
+        Copyright © 2014, 2020 Oracle and/or its affiliates All rights reserved.
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="js/libs/require/require.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</body>
 
 </html>
