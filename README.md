@@ -1,6 +1,6 @@
 # Oracle JET Data visualization based on Zeppelin syntax.
 
-Oracle JET Data visualization based on Zeppelin syntax.
+Oracle JET Data visualization based on simplified Zeppelin syntax.
 
 - https://www.oracle.com/webfolder/technetwork/jet/index.html
 - https://classic.yarnpkg.com/en/
